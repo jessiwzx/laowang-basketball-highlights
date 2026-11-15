@@ -38,7 +38,7 @@ powershell -ExecutionPolicy Bypass -File scripts\install.ps1   # 首次安装（
 
 ## 关键事实（踩过坑的）
 
-- **判定层当前 v24 已上线（2026-11-14）**：面积门 `AREA_KILL_REL=0.50`（`goal_decider.py`）；沿革 v19（2026-10-18）定标 `HIGH_CONF=0.60`、网分 −0.30/−0.26；v20 冷却身份判据、v21/v22 筐锚点（逐帧搬点默认关）、v23 `SIDE_SHORT` 0.17。**v25 候选（A 规则 `prev_gap<3s`）实测为交换（误判 −32 / 命中 −12，查准 +2.92pct、覆盖 −1.52pct），待签字、未上线**。进度与数字唯一台账 = `docs/需求池.md`，KPI 详报在 YOLO 训练仓 `yolo/reports/`（不在本仓）。
+- **判定层当前 v24 已上线（2026-11-14）**：面积门 `AREA_KILL_REL=0.50`（`goal_decider.py`）；沿革 v19（2026-10-18）定标 `HIGH_CONF=0.60`、网分 −0.30/−0.26；v20 冷却身份判据、v21/v22 筐锚点（逐帧搬点默认关）、v23 `SIDE_SHORT` 0.17。**v25 候选（A 规则 `prev_gap<3s` 降档）实测为交换（误判 −32 / 命中 −12，查准 +2.92pct、覆盖 −1.52pct），2026-11-14 裁定不做、11-15 复述确认，不落地**。进度与数字唯一台账 = `docs/需求池.md`，KPI 详报在 YOLO 训练仓 `yolo/reports/`（不在本仓）。
 - **真实运行数据不在本仓**：在上游仓 `D:\claude code\视频剪辑\work\*`（10 场 shooters.json/events/标定）；源视频在 `D:\claude code\1视频获取\归档\`。本仓 `work/` 仅个别样例。
 - **受限环境跑 pytest 可能被删除守卫掐断**（SystemExit:1，删除计数超阈值）——不是用例挂了，改用 `scripts/run_tests.py`（详见该脚本顶部注释）。
 - `requirements.txt` 全部钉 `==`，且有测试守着（`tests/test_requirements.py`）：不许有 gradio、`bbh/` import 的第三方包漏登记就红；torch 是 cu121 轮子，安装要带 `--extra-index-url`。
