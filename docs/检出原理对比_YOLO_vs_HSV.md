@@ -41,7 +41,9 @@
 ## 2 YOLO 实现（本工程默认）：自训 CNN 直接认球
 
 `bbh/detector_yolo.py`，自训 YOLOv8n（`bbh/weights/best.pt`，约 6MB），
-训练数据是 7 场比赛的逐帧标注（ball/hoop 两类）。每帧的流程：
+训练数据是 7 场比赛的逐帧标注。权重带三个类名 `ball` / `hoop` / `person`，
+**本链路只消费 `ball`（检球）与 `hoop`（筐锚点，v21 起）**，`person` 类未参与
+判定（出手人检人另用 COCO 预训 `yolov8n`）。每帧的流程：
 
 1. **整帧推理**（不裁 ROI，`imgsz=1024`）：把整幅画面缩到 1024 输入
    卷积网络，网络输出所有 ball 类检测框 + 置信度（取 conf≥0.03——

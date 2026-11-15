@@ -71,7 +71,7 @@ Ultralytics 购买商业许可。** 仓库作者不为使用者的合规判断�
 
 | 权重 | 来源 | 许可 |
 |---|---|---|
-| `bbh/weights/best.pt` | 本项目作者自训（球 + 篮筐两类） | MIT（随仓库提供） |
+| `bbh/weights/best.pt` | 本项目作者自训（类名 ball / hoop / person，判定只用 ball 与 hoop） | MIT（随仓库提供） |
 | `bbh/weights/yolov8n.pt` | Ultralytics 官方 COCO 预训练权重，仅用于检人环节 | 受 Ultralytics AGPL-3.0 约束 |
 
 **训练数据不公开**：`best.pt` 的训练集来自作者自己的比赛视频标注，包含真实人物

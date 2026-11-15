@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 项目概述
 
-篮球视频自动剪辑工具（fork 自「视频剪辑」仓）。核心变化：**主检球器已从 HSV 换成自训 YOLOv8n**（`bbh/weights/best.pt`，2 类：0=ball, 1=hoop）。链路：源视频 → 筐口标定 → 筐口 ROI 检球 → 进球判定（篮网运动证据 + 网簇兜底）→ 出手人溯源 → 出片。
+篮球视频自动剪辑工具（fork 自「视频剪辑」仓）。核心变化：**主检球器已从 HSV 换成自训 YOLOv8n**（`bbh/weights/best.pt`，3 类：0=ball, 1=hoop, 2=person；判定只消费 ball/hoop，检人另走 COCO `yolov8n`）。链路：源视频 → 筐口标定 → 筐口 ROI 检球 → 进球判定（篮网运动证据 + 网簇兜底）→ 出手人溯源 → 出片。
 
 - 后端：FastAPI/Starlette（`bbh/web/`），判定与检测核心在 `bbh/`
 - 前端：Vue 3 + Element Plus（`frontend/`，四页：calib 标定 / edit 剪辑台 / wall 归人墙 / shared），构建产物落 `bbh/static/`

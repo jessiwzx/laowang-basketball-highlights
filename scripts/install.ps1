@@ -1,4 +1,4 @@
-# 首次安装：建 venv（Python 3.12）并装依赖（含 CUDA 12.1 轮子的 torch）。
+﻿# 首次安装：建 venv（Python 3.12）并装依赖（含 CUDA 12.1 轮子的 torch）。
 # 用法：右键本文件 ->「使用 PowerShell 运行」，或在仓库根执行
 #   powershell -ExecutionPolicy Bypass -File scripts\install.ps1
 $ErrorActionPreference = "Stop"
