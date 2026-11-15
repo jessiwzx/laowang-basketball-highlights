@@ -1,0 +1,62 @@
+{
+ "variant": "short=0.17",
+ "per_video": {
+  "2026-11-07_1": [
+   [
+    453.59,
+    "high",
+    "review"
+   ],
+   [
+    725.36,
+    "high",
+    "review"
+   ],
+   [
+    1583.64,
+    "review",
+    "low"
+   ],
+   [
+    3239.89,
+    "review",
+    "low"
+   ],
+   [
+    3492.79,
+    "review",
+    "low"
+   ],
+   [
+    3967.26,
+    "review",
+    "low"
+   ],
+   [
+    4096.37,
+    "review",
+    "low"
+   ],
+   [
+    5730.82,
+    "review",
+    "low"
+   ],
+   [
+    5990.09,
+    "review",
+    "low"
+   ],
+   [
+    6066.13,
+    "high",
+    "review"
+   ],
+   [
+    6590.23,
+    "high",
+    "review"
+   ]
+  ]
+ }
+}

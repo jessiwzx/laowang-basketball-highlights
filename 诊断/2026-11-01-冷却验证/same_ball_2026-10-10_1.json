@@ -1,0 +1,178 @@
+[
+ {
+  "t": 11.601106770833333,
+  "status": "review",
+  "dT": 2.867,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 14,
+  "novel": false
+ },
+ {
+  "t": 11.667838541666667,
+  "status": "review",
+  "dT": 2.934,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 15,
+  "novel": false
+ },
+ {
+  "t": 183.75130208333334,
+  "status": "high",
+  "dT": 2.734,
+  "n_up": 4,
+  "span": 0.33,
+  "high_pt": 0,
+  "side_pt": 1,
+  "deep": 16,
+  "novel": true
+ },
+ {
+  "t": 2057.6706380208334,
+  "status": "review",
+  "dT": 0.267,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 2,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 2375.1016276041664,
+  "status": "high",
+  "dT": 2.067,
+  "n_up": 2,
+  "span": 0.07,
+  "high_pt": 1,
+  "side_pt": 17,
+  "deep": 11,
+  "novel": false
+ },
+ {
+  "t": 3013.5652994791667,
+  "status": "low",
+  "dT": 0.467,
+  "n_up": 1,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 1,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 3250.4551432291664,
+  "status": "high",
+  "dT": 2.067,
+  "n_up": 11,
+  "span": 0.8,
+  "high_pt": 0,
+  "side_pt": 4,
+  "deep": 12,
+  "novel": true
+ },
+ {
+  "t": 3658.895963541667,
+  "status": "low",
+  "dT": 1.2,
+  "n_up": 1,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 4,
+  "deep": 2,
+  "novel": false
+ },
+ {
+  "t": 3774.840625,
+  "status": "review",
+  "dT": 0.067,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 3774.9072916666664,
+  "status": "review",
+  "dT": 0.133,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 4062.536067708333,
+  "status": "review",
+  "dT": 0.067,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 4062.6027343749997,
+  "status": "review",
+  "dT": 0.133,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 4493.845182291667,
+  "status": "high",
+  "dT": 0.133,
+  "n_up": 1,
+  "span": 0.0,
+  "high_pt": 1,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 4494.178515625,
+  "status": "high",
+  "dT": 0.467,
+  "n_up": 3,
+  "span": 0.27,
+  "high_pt": 1,
+  "side_pt": 0,
+  "deep": 2,
+  "novel": true
+ },
+ {
+  "t": 4738.7357421875,
+  "status": "low",
+  "dT": 0.133,
+  "n_up": 1,
+  "span": 0.0,
+  "high_pt": 1,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ },
+ {
+  "t": 4802.875325520833,
+  "status": "review",
+  "dT": 0.067,
+  "n_up": 0,
+  "span": 0.0,
+  "high_pt": 0,
+  "side_pt": 0,
+  "deep": 0,
+  "novel": false
+ }
+]

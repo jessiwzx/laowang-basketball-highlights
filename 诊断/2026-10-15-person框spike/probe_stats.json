@@ -1,0 +1,1154 @@
+[
+ {
+  "video": "2026-08-28_1",
+  "key": "87:15.7",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 5233.75,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 14,
+  "old_person_area": 0.162,
+  "new_person_area": 0.278
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "112:17.4",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 6736.28,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.105,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "01:04.4",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 62.01,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 6,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 6,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 6,
+  "old_person_area": 0.062,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "79:47.3",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 4784.63,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.084,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "87:28.6",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 5246.29,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.177,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "100:29.3",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 6026.66,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 15,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 15,
+  "old_person_area": 0.261,
+  "new_person_area": 0.279
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "28:53.4",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 1731.43,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 10,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 11,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.167,
+  "new_person_area": 0.33
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "101:04.2",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 6063.06,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 14,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 11,
+  "old_person_area": 0.071,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "55:45.0",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 3342.91,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 10,
+  "old_person_area": 0.087,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "25:20.4",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 1518.47,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 11,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 10,
+  "old_person_area": 0.228,
+  "new_person_area": 0.318
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "01:28.0",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 86.54,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 13,
+  "old_person_area": 0.167,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "94:07.5",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 5646.14,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 7,
+    "hit": "expand",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.151,
+  "new_person_area": 0.278
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "109:22.5",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 6561.06,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 12,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 13,
+  "old_person_area": 0.142,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "85:33.5",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 5130.67,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 10,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 8,
+  "old_person_area": 0.198,
+  "new_person_area": 0.345
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "88:20.3",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 5297.89,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 13,
+  "old_person_area": 0.192,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-08-28_1",
+  "key": "101:26.6",
+  "kind": "normal",
+  "status": "high",
+  "spot": null,
+  "release_t": 6085.4,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 13,
+  "old_person_area": 0.083,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "74:49.8",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 4488.08,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.129,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "22:07.1",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 1325.22,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 7,
+  "old_person_area": 0.119,
+  "new_person_area": 0.278
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "55:10.6",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 3309.14,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 11,
+  "old_person_area": 0.098,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "13:12.0",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 791.03,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 12,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 10,
+  "old_person_area": 0.104,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "05:07.6",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 306.44,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 7,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 7,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 6,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 7,
+  "old_person_area": 0.114,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "02:04.7",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 122.66,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 8,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 8,
+  "old_person_area": 0.089,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "91:56.7",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 5515.62,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 14,
+  "old_person_area": 0.151,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "47:46.2",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 2862.91,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 10,
+  "old_person_area": 0.087,
+  "new_person_area": 0.278
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "62:53.4",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 3771.71,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 13,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 12,
+  "old_person_area": 0.138,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "44:27.3",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 2665.78,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 17,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "expand",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 14,
+  "old_person_area": 0.154,
+  "new_person_area": 0.275
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "35:38.1",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 2136.35,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 11,
+  "old_person_area": 0.197,
+  "new_person_area": 0.289
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "73:45.9",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 4425.05,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 12,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 9,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 9,
+  "old_person_area": 0.23,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "27:39.2",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 1656.68,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 13,
+  "old_person_area": 0.106,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "84:40.8",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 5078.86,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 11,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 9,
+    "hit": "expand",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "expand",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "expand",
+  "n_person": 11,
+  "old_person_area": 0.073,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "05:57.5",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 356.43,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 5,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 5,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 3,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 5,
+  "old_person_area": 0.08,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "37:47.5",
+  "kind": "normal",
+  "status": "high",
+  "spot": "ok",
+  "release_t": 2265.89,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 14,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 13,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 14,
+  "old_person_area": 0.088,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "69:40.2",
+  "kind": "hard",
+  "status": "review",
+  "spot": "bad",
+  "release_t": 4179.4,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 14,
+    "hit": "nearest",
+    "dist": 588.5
+   },
+   {
+    "off": -0.3,
+    "n_person": 13,
+    "hit": "nearest",
+    "dist": 586.3
+   },
+   {
+    "off": 0.0,
+    "n_person": 14,
+    "hit": "nearest",
+    "dist": 555.0
+   }
+  ],
+  "chosen_hit": "nearest",
+  "n_person": 14,
+  "old_person_area": 0.04,
+  "new_person_area": 0.278
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "71:56.7",
+  "kind": "hard",
+  "status": "review",
+  "spot": "ok",
+  "release_t": 4315.61,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 8,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 9,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 8,
+  "old_person_area": 0.065,
+  "new_person_area": 0.277
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "25:38.6",
+  "kind": "hard",
+  "status": "review",
+  "spot": "bad",
+  "release_t": 1537.67,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 11,
+    "hit": "nearest",
+    "dist": 836.8
+   },
+   {
+    "off": -0.3,
+    "n_person": 12,
+    "hit": "nearest",
+    "dist": 801.9
+   },
+   {
+    "off": 0.0,
+    "n_person": 12,
+    "hit": "nearest",
+    "dist": 784.2
+   }
+  ],
+  "chosen_hit": "nearest",
+  "n_person": 11,
+  "old_person_area": 0.041,
+  "new_person_area": 0.276
+ },
+ {
+  "video": "2026-09-04_1",
+  "key": "56:58.9",
+  "kind": "hard",
+  "status": "review",
+  "spot": "ok",
+  "release_t": 3417.37,
+  "frames": [
+   {
+    "off": -0.6,
+    "n_person": 10,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": -0.3,
+    "n_person": 12,
+    "hit": "in",
+    "dist": 0.0
+   },
+   {
+    "off": 0.0,
+    "n_person": 11,
+    "hit": "in",
+    "dist": 0.0
+   }
+  ],
+  "chosen_hit": "in",
+  "n_person": 10,
+  "old_person_area": 0.066,
+  "new_person_area": 0.277
+ }
+]

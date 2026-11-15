@@ -1,0 +1,278 @@
+{
+ "09-04_1": {
+  "n": 3,
+  "D3_low": 0,
+  "D3_spot_bad": 0,
+  "rows": [
+   {
+    "key": "09:24.8",
+    "A": {
+     "n_pts": 136,
+     "static_frac": 0.037,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 563.5583333333334,
+     "release_xy": [
+      1837.5,
+      719.0
+     ],
+     "track_n": 26,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 204,
+     "static_frac": 0.025,
+     "status": "review",
+     "spot": "ok",
+     "release_t": 562.8043333333334,
+     "release_xy": [
+      1444.3,
+      861.9
+     ],
+     "track_n": 8,
+     "extrap": false
+    }
+   },
+   {
+    "key": "26:45.9",
+    "A": {
+     "n_pts": 126,
+     "static_frac": 0.071,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 1604.3006555555555,
+     "release_xy": [
+      1363.6,
+      610.5
+     ],
+     "track_n": 41,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 203,
+     "static_frac": 0.074,
+     "status": "review",
+     "spot": "ok",
+     "release_t": 1604.7866555555556,
+     "release_xy": [
+      1273.5,
+      748.9
+     ],
+     "track_n": 10,
+     "extrap": false
+    }
+   },
+   {
+    "key": "25:38.6",
+    "A": {
+     "n_pts": 171,
+     "static_frac": 0.058,
+     "status": "review",
+     "spot": "bad",
+     "release_t": 1537.6666555555557,
+     "release_xy": [
+      627.5,
+      11.5
+     ],
+     "track_n": 7,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 199,
+     "static_frac": 0.02,
+     "status": "review",
+     "spot": "ok",
+     "release_t": 1538.1706555555556,
+     "release_xy": [
+      806.5,
+      758.5
+     ],
+     "track_n": 2,
+     "extrap": false
+    }
+   }
+  ]
+ },
+ "10-10_1": {
+  "n": 3,
+  "D3_low": 0,
+  "D3_spot_bad": 1,
+  "rows": [
+   {
+    "key": "03:21.6",
+    "A": {
+     "n_pts": 185,
+     "static_frac": 0.059,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 199.01946614583332,
+     "release_xy": [
+      582.5,
+      633.0
+     ],
+     "track_n": 29,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 268,
+     "static_frac": 0.034,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 201.15299479166666,
+     "release_xy": [
+      574.5,
+      577.4
+     ],
+     "track_n": 11,
+     "extrap": false
+    }
+   },
+   {
+    "key": "03:42.2",
+    "A": {
+     "n_pts": 206,
+     "static_frac": 0.034,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 221.02161458333333,
+     "release_xy": [
+      282.1,
+      336.7
+     ],
+     "track_n": 38,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 258,
+     "static_frac": 0.105,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 221.62161458333333,
+     "release_xy": [
+      435.2,
+      447.8
+     ],
+     "track_n": 10,
+     "extrap": false
+    }
+   },
+   {
+    "key": "23:48.4",
+    "A": {
+     "n_pts": 168,
+     "static_frac": 0.048,
+     "status": "review",
+     "spot": "bad",
+     "release_t": 1427.8751302083333,
+     "release_xy": [
+      778.9,
+      17.4
+     ],
+     "track_n": 5,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 263,
+     "static_frac": 0.046,
+     "status": "review",
+     "spot": "bad",
+     "release_t": 1427.8751302083333,
+     "release_xy": [
+      778.3,
+      17.3
+     ],
+     "track_n": 4,
+     "extrap": false
+    }
+   }
+  ]
+ },
+ "06-28_1": {
+  "n": 3,
+  "D3_low": 1,
+  "D3_spot_bad": 0,
+  "rows": [
+   {
+    "key": "07:38.2",
+    "A": {
+     "n_pts": 258,
+     "static_frac": 0.078,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 457.06796875,
+     "release_xy": [
+      516.5,
+      504.0
+     ],
+     "track_n": 11,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 260,
+     "static_frac": 0.069,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 456.3346354166667,
+     "release_xy": [
+      619.6,
+      432.0
+     ],
+     "track_n": 30,
+     "extrap": false
+    }
+   },
+   {
+    "key": "24:11.2",
+    "A": {
+     "n_pts": 249,
+     "static_frac": 0.056,
+     "status": "review",
+     "spot": "bad",
+     "release_t": 1450.1383463541667,
+     "release_xy": [
+      618.5,
+      199.5
+     ],
+     "track_n": 2,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 265,
+     "static_frac": 0.045,
+     "status": "high",
+     "spot": "ok",
+     "release_t": 1448.6050130208332,
+     "release_xy": [
+      317.7,
+      674.2
+     ],
+     "track_n": 21,
+     "extrap": false
+    }
+   },
+   {
+    "key": "14:49.6",
+    "A": {
+     "n_pts": 239,
+     "static_frac": 0.021,
+     "status": "low",
+     "spot": "ok",
+     "release_t": null,
+     "release_xy": null,
+     "track_n": 0,
+     "extrap": false
+    },
+    "D3": {
+     "n_pts": 261,
+     "static_frac": 0.023,
+     "status": "low",
+     "spot": "ok",
+     "release_t": null,
+     "release_xy": null,
+     "track_n": 0,
+     "extrap": false
+    }
+   }
+  ]
+ }
+}

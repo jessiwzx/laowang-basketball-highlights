@@ -1,0 +1,17 @@
+# 构建产物行尾固定 LF：否则 core.autocrlf 与 vite 的输出行尾打架，
+# 每次构建后 `git add bbh/static/**` 都会带入一批纯行尾 diff（html），
+# 且入库行尾随本机配置而变（换机器/换 clone 就不一致）。
+# 用 `text=auto` 而不是 `text`（=强制文本）：二进制产物（将来若落字体/图标）
+# 得由自动检测接管，强制文本会把它们的字节改坏。
+bbh/static/** text=auto eol=lf
+# 源 html 也钉 LF：vite 打包那趟会把 `\n` 重写成 `\r\n`，源文件若是 CRLF
+# 就在产物里留下 `\r\r\n`（双 CR），而 `eol=lf` 只吃掉紧邻 LF 的那个 CR，
+# 于是每次构建后 `git add bbh/static/**` 都会留 1 行/文件的孤立 CR。
+# 把源头钉成 LF，vite 那趟重写就是 no-op，产物干净且不随本机配置漂移。
+frontend/**/*.html text eol=lf
+# 源码也钉 LF：SFC 的 scoped-id 是按**文件内容哈希**推出来的（vite 把行尾
+# 也算进内容）⇒ 工作区行尾一变、产物的资产名就变（实测同一份 EditBay.vue：
+# LF → edit-nuGMxmTn.css，CRLF → edit-DZaedITF.css）。本仓 core.autocrlf=true，
+# fresh clone 的源码工作区是 CRLF，重建会得到另一整套资产名、`git status
+# bbh/static` 一片「删旧增新」；钉成 LF 后 clone 出来就是 LF，产物才跨机可复现。
+frontend/src/** text eol=lf

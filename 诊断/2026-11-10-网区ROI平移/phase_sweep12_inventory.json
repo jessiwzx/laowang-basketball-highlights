@@ -1,0 +1,150 @@
+{
+ "scenes": {
+  "2026-08-22_1": {
+   "video": "2026-08-22_1",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-08-22_1",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-08-28_1": {
+   "video": "2026-08-28_1",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-08-28_1",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-08-29_3": {
+   "video": "2026-08-29_3",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-08-29_3",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-09-04_1": {
+   "video": "2026-09-04_1",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-09-04_1",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-09-11_3": {
+   "video": "2026-09-11_3",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-09-11_3",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-09-12_1": {
+   "video": "2026-09-12_1",
+   "root_tag": "eval_out",
+   "ok": false,
+   "root": "D:\\claude code\\yolo\\eval_out\\v20_c03_s1\\2026-09-12_1",
+   "video_path": null,
+   "why": "源视频不在本机"
+  },
+  "2026-10-17_1": {
+   "video": "2026-10-17_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-10-17_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-10-17_1.mp4",
+   "calib_file": true,
+   "calib_inline": false,
+   "truth_src": "truth",
+   "n_goals": 152,
+   "n_events": 406,
+   "n_true_rows": 152,
+   "n_fp_high": 61,
+   "n_fp_all": 254
+  },
+  "2026-10-23_1": {
+   "video": "2026-10-23_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-10-23_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-10-23_1.mp4",
+   "calib_file": true,
+   "calib_inline": false,
+   "truth_src": "truth",
+   "n_goals": 135,
+   "n_events": 337,
+   "n_true_rows": 135,
+   "n_fp_high": 49,
+   "n_fp_all": 202
+  },
+  "2026-10-24_1": {
+   "video": "2026-10-24_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-10-24_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-10-24_1.mp4",
+   "calib_file": true,
+   "calib_inline": true,
+   "truth_src": "truth",
+   "n_goals": 122,
+   "n_events": 276,
+   "n_true_rows": 122,
+   "n_fp_high": 25,
+   "n_fp_all": 154
+  },
+  "2026-10-30_1": {
+   "video": "2026-10-30_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-10-30_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-10-30_1.mp4",
+   "calib_file": true,
+   "calib_inline": false,
+   "truth_src": "truth",
+   "n_goals": 112,
+   "n_events": 283,
+   "n_true_rows": 112,
+   "n_fp_high": 48,
+   "n_fp_all": 171
+  },
+  "2026-10-31_1": {
+   "video": "2026-10-31_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-10-31_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-10-31_1.mp4",
+   "calib_file": true,
+   "calib_inline": false,
+   "truth_src": "truth",
+   "n_goals": 127,
+   "n_events": 319,
+   "n_true_rows": 127,
+   "n_fp_high": 50,
+   "n_fp_all": 192
+  },
+  "2026-11-06_1": {
+   "video": "2026-11-06_1",
+   "root_tag": "work",
+   "ok": true,
+   "root": "D:\\claude code\\视频剪辑YOLO\\work\\2026-11-06_1",
+   "video_path": "D:\\claude code\\1视频获取\\归档\\2026-11-06_1.mp4",
+   "calib_file": true,
+   "calib_inline": true,
+   "truth_src": "truth",
+   "n_goals": 138,
+   "n_events": 327,
+   "n_true_rows": 138,
+   "n_fp_high": 39,
+   "n_fp_all": 189
+  }
+ },
+ "usable": [
+  "2026-10-17_1",
+  "2026-10-23_1",
+  "2026-10-24_1",
+  "2026-10-30_1",
+  "2026-10-31_1",
+  "2026-11-06_1"
+ ]
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>持球标注复核</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #1e1e1e; color: #ddd;
+         margin: 0; display: flex; flex-direction: column; align-items: center; }
+  h1 { font-size: 18px; margin: 12px 0 4px; }
+  #bar { width: 92%; height: 10px; background: #333; border-radius: 5px; margin: 6px 0; }
+  #fill { height: 100%; width: 0%; background: #4caf50; border-radius: 5px; transition: width .15s; }
+  #imgbox { margin: 8px 0; min-height: 320px; display: flex; align-items: center; justify-content: center; }
+  #img { max-width: 560px; max-height: 480px; border: 2px solid #555; border-radius: 6px; }
+  #name { font-size: 12px; color: #888; margin-bottom: 8px; }
+  .btns { display: flex; gap: 24px; margin: 10px 0; }
+  button { font-size: 20px; padding: 14px 42px; border: none; border-radius: 8px; cursor: pointer; }
+  #ok { background: #2e7d32; color: #fff; }
+  #bad { background: #c62828; color: #fff; }
+  #undo { background: #555; color: #eee; font-size: 14px; padding: 10px 20px; }
+  #tip { color: #999; font-size: 13px; margin: 4px 0 16px; }
+  #fin { display: none; font-size: 18px; color: #4caf50; margin-top: 30px; }
+</style>
+</head>
+<body>
+<h1>绿框框住的是「球员手里/控制中的篮球」吗？</h1>
+<div id="bar"><div id="fill"></div></div>
+<div id="name"></div>
+<div id="imgbox"><img id="img"></div>
+<div class="btns">
+  <button id="ok">✓ 框对了 (F)</button>
+  <button id="bad">✗ 框错了 (J)</button>
+  <button id="undo">↩ 撤销 (U)</button>
+</div>
+<div id="tip">快捷键：F=对，J=错，U=撤销。判断标准：绿框内是篮球（在手上/脚下运球/被抱着都算对）；框在头脸/衣服/地板/别的东西上就是错。</div>
+<div id="fin">✅ 全部复核完成！可以回到对话里说「复核完了」。</div>
+<script>
+let list = [], done = {}, i = 0;
+const img = document.getElementById('img'), name = document.getElementById('name'),
+      fill = document.getElementById('fill'), fin = document.getElementById('fin');
+
+fetch('list').then(r => r.json()).then(d => {
+  list = d.list; done = d.done;
+  // 跳到第一个未判定的
+  while (i < list.length && done[list[i]] !== undefined) i++;
+  show();
+});
+
+function show() {
+  if (i >= list.length) {
+    img.style.display = 'none'; name.textContent = '';
+    document.getElementById('ok').disabled = document.getElementById('bad').disabled = true;
+    fin.style.display = 'block';
+    fill.style.width = '100%';
+    return;
+  }
+  const k = list[i];
+  img.style.display = 'block';
+  img.src = 'crops/' + encodeURIComponent(k) + '.jpg?' + Date.now();
+  name.textContent = (i + 1) + ' / ' + list.length + '  ·  ' + k;
+  fill.style.width = (Object.keys(done).length / list.length * 100) + '%';
+}
+
+function verdict(v) {
+  if (i >= list.length) return;
+  const k = list[i];
+  done[k] = v;
+  fetch('verdict', {method: 'POST', body: JSON.stringify({[k]: v})});
+  i++;
+  show();
+}
+
+function undo() {
+  if (i > 0) { i--; delete done[list[i]];
+    fetch('verdict', {method: 'POST', body: JSON.stringify({[list[i]]: null})});
+    show(); }
+}
+
+document.getElementById('ok').onclick = () => verdict(true);
+document.getElementById('bad').onclick = () => verdict(false);
+document.getElementById('undo').onclick = undo;
+document.addEventListener('keydown', e => {
+  const k = e.key.toLowerCase();
+  if (k === 'f') verdict(true);
+  else if (k === 'j') verdict(false);
+  else if (k === 'u') undo();
+});
+</script>
+</body>
+</html>

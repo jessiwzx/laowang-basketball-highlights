@@ -1,0 +1,35 @@
+[
+ {
+  "field": "2026-10-10_1",
+  "goal_rows": 100,
+  "non_auto_v18": 70,
+  "non_auto_v19": 76,
+  "delta": 6,
+  "rel": 0.08571428571428572,
+  "recompute_selfcheck": "100/100",
+  "src": "D:/claude code/视频剪辑\\work\\2026-10-10_1\\events.json",
+  "logic_ver": 18
+ },
+ {
+  "field": "2026-09-24_1",
+  "goal_rows": 96,
+  "non_auto_v18": 24,
+  "non_auto_v19": 36,
+  "delta": 12,
+  "rel": 0.5,
+  "recompute_selfcheck": "96/96",
+  "src": "D:/claude code/yolo\\eval_out\\v18_reverse\\2026-09-24_1\\events.json",
+  "logic_ver": 18
+ },
+ {
+  "field": "2026-10-16_1",
+  "goal_rows": 92,
+  "non_auto_v18": 68,
+  "non_auto_v19": 74,
+  "delta": 6,
+  "rel": 0.08823529411764706,
+  "recompute_selfcheck": "92/92",
+  "src": "D:/claude code/视频剪辑\\work\\2026-10-16_1\\events.json",
+  "logic_ver": 18
+ }
+]

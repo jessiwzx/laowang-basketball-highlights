@@ -1,0 +1,54 @@
+__pycache__/
+.venv/
+work/
+*.mp4
+!tests/data/*.mp4
+calibration.json
+calibration_ref.png
+calibration_seg2.json
+calibration_ref_seg2.png
+tags.json
+tag_assignments.json
+.pytest_cache/
+.superpowers/
+# 本地素材/原型档案（用户 2026-09-19 裁定分开处理：竞品调研报告入库，这些不入库）
+前端原型/
+视频参考/
+probe_patches.npz
+# 程序跑出来的本机状态与验收产出（打包的「干净检查」要求仓库随时可用）
+ui_prefs.json
+竖屏验收/
+# 安装/构建日志
+*.log
+# pytest 临时目录（run_tests.py 用唯一时间戳 basetemp + 分批日志）
+.pytest_tmp/
+.pt_*/
+pytest_*.txt
+run_tests_out.txt
+# 评测批次产物（scripts/run_eval.py --out-work 的常见命名）+ 生成的报告
+work_dbg*/
+reports/EVAL_*
+# 项目/会话数据与生成产物（不入库）
+.workbuddy/
+generated-images/
+# 诊断留档只存结论、脚本与数据表；截图/拼图/录屏与基座权重不入库（十来个目录合计 260MB+；
+# mp4 由上面的全局 *.mp4 覆盖）
+诊断/**/*.jpg
+诊断/**/*.jpeg
+诊断/**/*.png
+诊断/**/*.gif
+诊断/**/*.pt
+
+# L1 重放临时目录（每场 positions/标定副本，可再生，勿入库）
+诊断/**/_l1/
+
+# ★ 视频帧截图不入库（2026-11-15 开源前盘点）：reports/vcheck 曾误入库 5 张比赛抽帧，
+# 画面含真实球员面部与球馆招牌标识 → 开源仓（public）不得分发。
+# 同理，任何「内嵌 base64 帧」的复核用 html 也不入库（曾有一个 13.4MB / 581 帧的文件）。
+reports/vcheck/
+诊断/**/*_offline.html
+
+# 基座/训练中间权重不入库：运行所需的权重只在 bbh/weights/（best.pt 自训 + yolov8n.pt 检人）
+# 根锚定，避免误伤 bbh/weights/
+/weights/
+runs/

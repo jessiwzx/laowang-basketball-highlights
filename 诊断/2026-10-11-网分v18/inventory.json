@@ -1,0 +1,158 @@
+[
+ {
+  "field": "2026-09-04_1",
+  "sec": 947.1,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-09-04_1.mp4",
+  "path_rewrite": false,
+  "identity_patch": [],
+  "root_calib": false,
+  "warn": "标定未存参考帧，镜头位移校正未启用（在「⚙ 标定设置」重新生成一次标定即可启用：固定机位中途被碰/漂移的自动校正依赖它）。",
+  "match": {
+   "rows_old": 352,
+   "rows_new": 362,
+   "exact_pairs": 336,
+   "near_t_old": 352,
+   "ver_old": 13,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-09-11_3",
+  "sec": 1315.7,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-09-11_3.mp4",
+  "path_rewrite": false,
+  "identity_patch": [],
+  "root_calib": false,
+  "warn": null,
+  "match": {
+   "rows_old": 366,
+   "rows_new": 382,
+   "exact_pairs": 311,
+   "near_t_old": 366,
+   "ver_old": 13,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-09-12_1",
+  "sec": 1009.9,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-09-12_1.mp4",
+  "path_rewrite": false,
+  "identity_patch": [],
+  "root_calib": false,
+  "warn": null,
+  "match": {
+   "rows_old": 327,
+   "rows_new": 347,
+   "exact_pairs": 327,
+   "near_t_old": 327,
+   "ver_old": 13,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-09-19_1",
+  "sec": 384.0,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-09-19_1.mp4",
+  "path_rewrite": false,
+  "identity_patch": [],
+  "root_calib": false,
+  "warn": null,
+  "match": {
+   "rows_old": 296,
+   "rows_new": 320,
+   "exact_pairs": 288,
+   "near_t_old": 296,
+   "ver_old": 13,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-10-10_1",
+  "sec": 2.8,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-10-10_1.mp4",
+  "path_rewrite": false,
+  "identity_patch": [],
+  "root_calib": false,
+  "warn": null,
+  "match": {
+   "rows_old": 234,
+   "rows_new": 227,
+   "exact_pairs": 227,
+   "near_t_old": 227,
+   "ver_old": 16,
+   "ver_new": "17"
+  },
+  "note": "少 7 行已查明非回归：7 行全为 B2 注入行（above_n=0），其时刻与 deleted.json 00:54 新增的 7 键逐个精确对上（13.9↔13.89 等）——用户删除后 B2 按设计不还魂。清空删键重放=234 行全回归坐实因果。存档 234 行系 00:19 删前产出；effective 覆盖=227/227 未删行=100%。"
+ },
+ {
+  "field": "2026-08-21_1",
+  "sec": 732.7,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-08-21_1.mp4",
+  "identity_patch": [
+   "positions"
+  ],
+  "calib": "calib_key 重建（本场原始标定）",
+  "warn": "标定未存参考帧，镜头位移校正未启用（在「⚙ 标定设置」重新生成一次标定即可启用：固定机位中途被碰/漂移的自动校正依赖它）。",
+  "match": {
+   "rows_old": 335,
+   "rows_new": 344,
+   "exact_pairs": 282,
+   "near_t_old": 335,
+   "ver_old": 10,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-08-22_1",
+  "sec": 718.1,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-08-22_1.mp4",
+  "identity_patch": [
+   "positions"
+  ],
+  "calib": "calib_key 重建（本场原始标定）",
+  "warn": "标定未存参考帧，镜头位移校正未启用（在「⚙ 标定设置」重新生成一次标定即可启用：固定机位中途被碰/漂移的自动校正依赖它）。",
+  "match": {
+   "rows_old": 311,
+   "rows_new": 334,
+   "exact_pairs": 275,
+   "near_t_old": 311,
+   "ver_old": 10,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-08-28_1",
+  "sec": 343.3,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-08-28_1.mp4",
+  "identity_patch": [
+   "positions"
+  ],
+  "calib": "calib_key 重建（本场原始标定）",
+  "warn": "标定未存参考帧，镜头位移校正未启用（在「⚙ 标定设置」重新生成一次标定即可启用：固定机位中途被碰/漂移的自动校正依赖它）。",
+  "match": {
+   "rows_old": 296,
+   "rows_new": 345,
+   "exact_pairs": 260,
+   "near_t_old": 296,
+   "ver_old": 11,
+   "ver_new": "17"
+  }
+ },
+ {
+  "field": "2026-08-29_3",
+  "sec": 306.6,
+  "video": "D:\\claude code\\1视频获取\\归档\\2026-08-29_3.mp4",
+  "identity_patch": [],
+  "calib": "calib_key 重建（本场原始标定）",
+  "warn": "标定未存参考帧，镜头位移校正未启用（在「⚙ 标定设置」重新生成一次标定即可启用：固定机位中途被碰/漂移的自动校正依赖它）。",
+  "match": {
+   "rows_old": 434,
+   "rows_new": 527,
+   "exact_pairs": 389,
+   "near_t_old": 434,
+   "ver_old": 11,
+   "ver_new": "17"
+  }
+ }
+]

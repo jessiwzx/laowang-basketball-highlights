@@ -1,0 +1,34 @@
+# ============================================================================
+# 纯 CPU（没有 NVIDIA 显卡）用户先看这里，要改三个地方：
+#   1) 下面 torch / torchvision 两行的 "+cu121" 改成 "+cpu"
+#   2) 安装时索引换成 https://download.pytorch.org/whl/cpu
+#      （即 scripts\install.ps1 里的 --extra-index-url 那行）
+#   3) 运行前设 BBH_YOLO_DEVICE=-1（或在 run_app.bat 里加一行 set）
+# 装 CUDA 版约 2.5GB，CPU 版约 300MB；CPU 能跑但慢很多。
+# ============================================================================
+
+# 运行时依赖 —— 就是 bbh/ 直接 import 的那些模块，一个不多一个不少。
+# tests/test_requirements.py 有三条测试守着它：不许有 gradio、每条都钉 ==
+# 且钉的号就是本机 venv 跑过测试的号、bbh/ 里 import 的每个第三方模块这里
+# 都得有对应条目（漏一个就红）。
+fastapi==0.141.1
+imageio-ffmpeg==0.6.0
+numpy==2.5.2
+opencv-python==5.0.0.93
+pillow==11.3.0
+pydantic==2.12.3
+starlette==0.52.1
+uvicorn==0.52.3
+
+# 自训 YOLO 检球器（bbh/detector_yolo.py 直接 import ultralytics）。
+# torch / torchvision 是 CUDA 12.1 轮子，不在默认 PyPI 源上——安装要带
+#   --extra-index-url https://download.pytorch.org/whl/cu121
+# （见 README「安装」节 / scripts/install.ps1）。CPU-only 机器把 +cu121 换成 +cpu。
+ultralytics==8.4.163
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+
+# 测试用（跑 pytest 需要；打包版不含它们）。
+# httpx 是 fastapi.testclient 的运行时依赖，虽然没人直接 import 它。
+httpx==0.28.1
+pytest==9.1.1

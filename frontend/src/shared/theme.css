@@ -1,0 +1,23 @@
+/* 深色为默认（视频工具惯例，看片不刺眼）；主色篮球橙。 */
+html { color-scheme: dark; }
+body { margin: 0; background: #141414; color: #e5eaf3;
+  font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif; }
+[v-cloak] { display: none; }
+:root {
+  --el-color-primary: #e8622d;
+  --el-color-primary-light-3: #a84b26;
+  --el-color-primary-light-5: #7e3b21;
+  --el-color-primary-light-7: #542b1b;
+  --el-color-primary-light-8: #3f2519;
+  --el-color-primary-light-9: #2a1e16;
+  --el-color-primary-dark-2: #f48553;
+}
+.tabbar { position: sticky; top: 0; z-index: 2000; display: flex;
+  align-items: center; gap: 6px; padding: 6px 14px; height: 40px;
+  background: #1b1b1b; border-bottom: 1px solid #333; box-sizing: border-box; }
+.tabbar .brand { font-weight: 700; margin-right: 10px; }
+.tabbar a { color: #cfd3dc; text-decoration: none; padding: 6px 12px;
+  border-radius: 6px; font-size: 13.5px; }
+.tabbar a:hover { background: #262626; }
+.tabbar a.on { background: var(--el-color-primary); color: #fff; }
+.tabbar .hint { margin-left: auto; color: #8d9098; font-size: 12.5px; }

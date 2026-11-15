@@ -1,0 +1,389 @@
+{
+ "2026-09-12_1": {
+  "v19": 327,
+  "v20": 339,
+  "d19": {
+   "high": 201,
+   "review": 55,
+   "low": 71
+  },
+  "d20": {
+   "high": 207,
+   "review": 56,
+   "low": 76
+  },
+  "add": 14,
+  "dadd": {
+   "high": 7,
+   "review": 2,
+   "low": 5
+  },
+  "lost": [
+   6024.34,
+   6028.92
+  ],
+  "rows": [
+   {
+    "t": 112.75066666666667,
+    "status": "low",
+    "conf": 0.87,
+    "off": 0.199,
+    "above_n": 3,
+    "below_n": 2
+   },
+   {
+    "t": 121.74266666666668,
+    "status": "low",
+    "conf": 0.7,
+    "off": 0.556,
+    "above_n": 4,
+    "below_n": 3
+   },
+   {
+    "t": 235.02733333333333,
+    "status": "low",
+    "conf": 0.69,
+    "off": -0.257,
+    "above_n": 5,
+    "below_n": 1
+   },
+   {
+    "t": 788.538,
+    "status": "review",
+    "conf": 0.87,
+    "off": 0.127,
+    "above_n": 10,
+    "below_n": 4
+   },
+   {
+    "t": 852.5543333333334,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.071,
+    "above_n": 7,
+    "below_n": 5
+   },
+   {
+    "t": 927.898,
+    "status": "low",
+    "conf": 0.64,
+    "off": -0.565,
+    "above_n": 6,
+    "below_n": 3
+   },
+   {
+    "t": 1860.3473333333334,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.02,
+    "above_n": 11,
+    "below_n": 10
+   },
+   {
+    "t": 2542.5903333333335,
+    "status": "review",
+    "conf": 0.87,
+    "off": -0.17,
+    "above_n": 8,
+    "below_n": 5
+   },
+   {
+    "t": 3284.589666666667,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.086,
+    "above_n": 11,
+    "below_n": 9
+   },
+   {
+    "t": 4839.098988888889,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.086,
+    "above_n": 10,
+    "below_n": 6
+   },
+   {
+    "t": 6022.0089777777785,
+    "status": "high",
+    "conf": 0.87,
+    "off": 0.114,
+    "above_n": 5,
+    "below_n": 8
+   },
+   {
+    "t": 6026.588977777778,
+    "status": "high",
+    "conf": 0.84,
+    "off": -0.053,
+    "above_n": 3,
+    "below_n": 4
+   },
+   {
+    "t": 6414.143644444444,
+    "status": "low",
+    "conf": 0.81,
+    "off": -0.14,
+    "above_n": 6,
+    "below_n": 2
+   },
+   {
+    "t": 6751.343311111112,
+    "status": "high",
+    "conf": 0.9,
+    "off": -0.016,
+    "above_n": 5,
+    "below_n": 8
+   }
+  ]
+ },
+ "2026-09-04_1": {
+  "v19": 357,
+  "v20": 375,
+  "d19": {
+   "high": 165,
+   "review": 77,
+   "low": 115
+  },
+  "d20": {
+   "high": 175,
+   "review": 78,
+   "low": 122
+  },
+  "add": 20,
+  "dadd": {
+   "high": 10,
+   "review": 3,
+   "low": 7
+  },
+  "lost": [
+   3070.5,
+   6746.1
+  ],
+  "rows": [
+   {
+    "t": 170.856,
+    "status": "high",
+    "conf": 0.87,
+    "off": -0.143,
+    "above_n": 8,
+    "below_n": 12
+   },
+   {
+    "t": 265.24600000000004,
+    "status": "review",
+    "conf": 0.8,
+    "off": -0.365,
+    "above_n": 7,
+    "below_n": 5
+   },
+   {
+    "t": 517.89,
+    "status": "high",
+    "conf": 0.87,
+    "off": -0.18,
+    "above_n": 10,
+    "below_n": 5
+   },
+   {
+    "t": 546.5740000000001,
+    "status": "high",
+    "conf": 0.69,
+    "off": -0.241,
+    "above_n": 1,
+    "below_n": 6
+   },
+   {
+    "t": 723.9886666666667,
+    "status": "high",
+    "conf": 0.87,
+    "off": 0.188,
+    "above_n": 2,
+    "below_n": 6
+   },
+   {
+    "t": 1230.5176666666664,
+    "status": "review",
+    "conf": 0.8,
+    "off": 0.39,
+    "above_n": 5,
+    "below_n": 3
+   },
+   {
+    "t": 1316.0696555555555,
+    "status": "review",
+    "conf": 0.84,
+    "off": -0.245,
+    "above_n": 6,
+    "below_n": 4
+   },
+   {
+    "t": 1473.3053222222222,
+    "status": "low",
+    "conf": 0.66,
+    "off": -0.144,
+    "above_n": 2,
+    "below_n": 1
+   },
+   {
+    "t": 1546.5696555555555,
+    "status": "low",
+    "conf": 0.65,
+    "off": 0.384,
+    "above_n": 6,
+    "below_n": 1
+   },
+   {
+    "t": 1548.0706555555557,
+    "status": "low",
+    "conf": 0.55,
+    "off": 0.655,
+    "above_n": 5,
+    "below_n": 1
+   },
+   {
+    "t": 1551.1426555555556,
+    "status": "low",
+    "conf": 0.7,
+    "off": 0.521,
+    "above_n": 2,
+    "below_n": 5
+   },
+   {
+    "t": 2149.9193222222225,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.072,
+    "above_n": 7,
+    "below_n": 9
+   },
+   {
+    "t": 2466.701988888889,
+    "status": "low",
+    "conf": 0.76,
+    "off": -0.48,
+    "above_n": 5,
+    "below_n": 4
+   },
+   {
+    "t": 2593.372988888889,
+    "status": "high",
+    "conf": 0.81,
+    "off": 0.174,
+    "above_n": 4,
+    "below_n": 2
+   },
+   {
+    "t": 3070.318988888889,
+    "status": "low",
+    "conf": 0.7,
+    "off": 0.627,
+    "above_n": 6,
+    "below_n": 6
+   },
+   {
+    "t": 3312.718655555556,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.047,
+    "above_n": 7,
+    "below_n": 11
+   },
+   {
+    "t": 4046.988311111111,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.055,
+    "above_n": 4,
+    "below_n": 12
+   },
+   {
+    "t": 6259.551977777778,
+    "status": "high",
+    "conf": 0.84,
+    "off": -0.218,
+    "above_n": 7,
+    "below_n": 13
+   },
+   {
+    "t": 6746.0253111111115,
+    "status": "high",
+    "conf": 0.87,
+    "off": 0.13,
+    "above_n": 5,
+    "below_n": 8
+   },
+   {
+    "t": 7091.912644444445,
+    "status": "low",
+    "conf": 0.7,
+    "off": 0.661,
+    "above_n": 5,
+    "below_n": 5
+   }
+  ]
+ },
+ "2026-10-10_1": {
+  "v19": 196,
+  "v20": 201,
+  "d19": {
+   "high": 78,
+   "review": 55,
+   "low": 63
+  },
+  "d20": {
+   "high": 81,
+   "review": 55,
+   "low": 65
+  },
+  "add": 5,
+  "dadd": {
+   "high": 3,
+   "review": 0,
+   "low": 2
+  },
+  "lost": [],
+  "rows": [
+   {
+    "t": 183.75130208333334,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.06,
+    "above_n": 4,
+    "below_n": 7
+   },
+   {
+    "t": 2111.6091796875,
+    "status": "low",
+    "conf": 0.72,
+    "off": -0.176,
+    "above_n": 6,
+    "below_n": 1
+   },
+   {
+    "t": 2544.7188151041664,
+    "status": "low",
+    "conf": 0.8,
+    "off": 0.304,
+    "above_n": 6,
+    "below_n": 3
+   },
+   {
+    "t": 3250.4551432291664,
+    "status": "high",
+    "conf": 0.9,
+    "off": 0.031,
+    "above_n": 9,
+    "below_n": 8
+   },
+   {
+    "t": 4494.178515625,
+    "status": "high",
+    "conf": 0.9,
+    "off": -0.038,
+    "above_n": 5,
+    "below_n": 9
+   }
+  ]
+ }
+}

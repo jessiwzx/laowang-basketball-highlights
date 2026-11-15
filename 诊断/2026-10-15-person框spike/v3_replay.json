@@ -1,0 +1,362 @@
+[
+ {
+  "i": 1,
+  "key": "87:15.7",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 2,
+  "key": "112:17.4",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 3,
+  "key": "01:04.4",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 4,
+  "key": "79:47.3",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 5,
+  "key": "87:28.6",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 6,
+  "key": "100:29.3",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 7,
+  "key": "28:53.4",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 8,
+  "key": "101:04.2",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 9,
+  "key": "55:45.0",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 10,
+  "key": "25:20.4",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 11,
+  "key": "01:28.0",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 12,
+  "key": "94:07.5",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": true,
+  "verdict": "ok"
+ },
+ {
+  "i": 13,
+  "key": "109:22.5",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 14,
+  "key": "85:33.5",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 15,
+  "key": "88:20.3",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 16,
+  "key": "101:26.6",
+  "video": "2026-08-28_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 17,
+  "key": "74:49.8",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 18,
+  "key": "22:07.1",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 19,
+  "key": "55:10.6",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 20,
+  "key": "13:12.0",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 21,
+  "key": "05:07.6",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 22,
+  "key": "02:04.7",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 23,
+  "key": "91:56.7",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 24,
+  "key": "47:46.2",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": true,
+  "verdict": "ok"
+ },
+ {
+  "i": 25,
+  "key": "62:53.4",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 26,
+  "key": "44:27.3",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 27,
+  "key": "35:38.1",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 28,
+  "key": "73:45.9",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 29,
+  "key": "27:39.2",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 30,
+  "key": "84:40.8",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 31,
+  "key": "05:57.5",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 32,
+  "key": "37:47.5",
+  "video": "2026-09-04_1",
+  "kind": "normal",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 33,
+  "key": "69:40.2",
+  "video": "2026-09-04_1",
+  "kind": "hard",
+  "ball_found": true,
+  "v3_hit": "nearest",
+  "changed": false,
+  "verdict": "holder_nearest/ok"
+ },
+ {
+  "i": 34,
+  "key": "71:56.7",
+  "video": "2026-09-04_1",
+  "kind": "hard",
+  "ball_found": true,
+  "v3_hit": "in_ball",
+  "changed": false,
+  "verdict": "ok"
+ },
+ {
+  "i": 35,
+  "key": "25:38.6",
+  "video": "2026-09-04_1",
+  "kind": "hard",
+  "ball_found": true,
+  "v3_hit": "nearest",
+  "changed": false,
+  "verdict": "holder_nearest/ok"
+ },
+ {
+  "i": 36,
+  "key": "56:58.9",
+  "video": "2026-09-04_1",
+  "kind": "hard",
+  "ball_found": false,
+  "v3_hit": "in",
+  "changed": false,
+  "verdict": "no_ball(低置信)"
+ }
+]

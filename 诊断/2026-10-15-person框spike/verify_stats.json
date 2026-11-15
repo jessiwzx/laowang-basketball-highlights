@@ -1,0 +1,313 @@
+[
+ {
+  "i": 1,
+  "video": "2026-08-28_1",
+  "key": "87:15.7",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 334.7,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 2,
+  "video": "2026-08-28_1",
+  "key": "112:17.4",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 3,
+  "video": "2026-08-28_1",
+  "key": "01:04.4",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 245.9,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 4,
+  "video": "2026-08-28_1",
+  "key": "79:47.3",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 287.4,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 5,
+  "video": "2026-08-28_1",
+  "key": "87:28.6",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 253.7,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 6,
+  "video": "2026-08-28_1",
+  "key": "100:29.3",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 441.1,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 7,
+  "video": "2026-08-28_1",
+  "key": "28:53.4",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 633.0,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 8,
+  "video": "2026-08-28_1",
+  "key": "101:04.2",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 226.6,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 9,
+  "video": "2026-08-28_1",
+  "key": "55:45.0",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 430.8,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 10,
+  "video": "2026-08-28_1",
+  "key": "25:20.4",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 468.5,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 11,
+  "video": "2026-08-28_1",
+  "key": "01:28.0",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 266.1,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 12,
+  "video": "2026-08-28_1",
+  "key": "94:07.5",
+  "kind": "normal",
+  "chosen_hit": "expand",
+  "ball_dist_to_release": 282.0,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 13,
+  "video": "2026-08-28_1",
+  "key": "109:22.5",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 203.9,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 14,
+  "video": "2026-08-28_1",
+  "key": "85:33.5",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 336.3,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 15,
+  "video": "2026-08-28_1",
+  "key": "88:20.3",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 334.2,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 16,
+  "video": "2026-08-28_1",
+  "key": "101:26.6",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 152.5,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 17,
+  "video": "2026-09-04_1",
+  "key": "74:49.8",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 18,
+  "video": "2026-09-04_1",
+  "key": "22:07.1",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 681.5,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 19,
+  "video": "2026-09-04_1",
+  "key": "55:10.6",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 20,
+  "video": "2026-09-04_1",
+  "key": "13:12.0",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 537.7,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 21,
+  "video": "2026-09-04_1",
+  "key": "05:07.6",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 557.8,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 22,
+  "video": "2026-09-04_1",
+  "key": "02:04.7",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 588.1,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 23,
+  "video": "2026-09-04_1",
+  "key": "91:56.7",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 24,
+  "video": "2026-09-04_1",
+  "key": "47:46.2",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 25,
+  "video": "2026-09-04_1",
+  "key": "62:53.4",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 26,
+  "video": "2026-09-04_1",
+  "key": "44:27.3",
+  "kind": "normal",
+  "chosen_hit": "expand",
+  "ball_dist_to_release": 3.3,
+  "holder_iou_chosen": 1.0,
+  "verdict": "holder_in_box/ok"
+ },
+ {
+  "i": 27,
+  "video": "2026-09-04_1",
+  "key": "35:38.1",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 28,
+  "video": "2026-09-04_1",
+  "key": "73:45.9",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 290.3,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 29,
+  "video": "2026-09-04_1",
+  "key": "27:39.2",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 30,
+  "video": "2026-09-04_1",
+  "key": "84:40.8",
+  "kind": "normal",
+  "chosen_hit": "expand",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 31,
+  "video": "2026-09-04_1",
+  "key": "05:57.5",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "ball_dist_to_release": 189.5,
+  "verdict": "release_suspect"
+ },
+ {
+  "i": 32,
+  "video": "2026-09-04_1",
+  "key": "37:47.5",
+  "kind": "normal",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 33,
+  "video": "2026-09-04_1",
+  "key": "69:40.2",
+  "kind": "hard",
+  "chosen_hit": "nearest",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 34,
+  "video": "2026-09-04_1",
+  "key": "71:56.7",
+  "kind": "hard",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 35,
+  "video": "2026-09-04_1",
+  "key": "25:38.6",
+  "kind": "hard",
+  "chosen_hit": "nearest",
+  "verdict": "no_ball"
+ },
+ {
+  "i": 36,
+  "video": "2026-09-04_1",
+  "key": "56:58.9",
+  "kind": "hard",
+  "chosen_hit": "in",
+  "verdict": "no_ball"
+ }
+]
