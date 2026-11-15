@@ -40,7 +40,7 @@ powershell -ExecutionPolicy Bypass -File scripts\install.ps1   # 首次安装（
 
 - **判定层 v19 已上线（2026-10-18）**：`HIGH_CONF=0.60`、网分 −0.30/−0.26（`goal_decider.py` / `net_motion.py`，R-020）；进度与数字唯一台账 = `docs/需求池.md` R-020，KPI 详报在 YOLO 训练仓 `yolo/reports/`（不在本仓）。
 - **真实运行数据不在本仓**：在上游仓 `D:\claude code\视频剪辑\work\*`（10 场 shooters.json/events/标定）；源视频在 `D:\claude code\1视频获取\归档\`。本仓 `work/` 仅个别样例。
-- **沙箱跑 pytest 会被 safe-delete 守卫掐断**（SystemExit:1，`sitecustomize.py` 删除计数 ≥50）——不是用例挂了，改用 `scripts/run_tests.py`（详见 `pytest.ini` 顶部注释）。
+- **受限环境跑 pytest 可能被删除守卫掐断**（SystemExit:1，删除计数超阈值）——不是用例挂了，改用 `scripts/run_tests.py`（详见该脚本顶部注释）。
 - `requirements.txt` 全部钉 `==`，且有测试守着（`tests/test_requirements.py`）：不许有 gradio、`bbh/` import 的第三方包漏登记就红；torch 是 cu121 轮子，安装要带 `--extra-index-url`。
 - 依赖隔离：统一用本仓 `.venv`（torch 2.5.1+cu121 / ultralytics 8.4.163 / Python 3.12），不要装进全局环境。
 

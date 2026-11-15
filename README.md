@@ -83,6 +83,7 @@ run_app.bat
 ## 七、许可与第三方
 
 - 本项目代码：**MIT**，见 [LICENSE](LICENSE)。
+- **第三方组件、模型权重、FFmpeg 与 AGPL 合规提醒的完整清单，见 [NOTICE.md](NOTICE.md)。**
 - `bbh/weights/best.pt`：本项目自训权重，随仓库按同一许可提供；**训练数据不公开**，因此别人无法复现训练过程，只能直接使用权重。
 - 依赖的 [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) 采用 **AGPL-3.0**（或商业许可）。本项目用它做检球与检人。
   如果你打算**闭源商用**，需要注意 AGPL 的传染性，请自行确认合规或购买 Ultralytics 商业许可；只是自己用或开源分发则没有这个问题。
@@ -681,7 +682,8 @@ cp936 终端管道下不带会 UnicodeEncodeError；cmd 里先
 - `run_eval.py` 需要标定：优先读 `--calib-from\<场>\calibration.json`
   （默认 = `--out-work`）；**缺标定时自动从 `truth/<场>.json` 的 `calib_key`
   重建单段标定**（无参考帧 → 不做位移校正，多段标定的场次请显式给
-  `--calib-from`）。视频默认到 `D:\claude code\1视频获取\归档`，用 `--video-dir` 改。
+  `--calib-from`）。**视频目录必须自己指定**：`--video-dir <你的视频目录>`
+  （脚本里的默认值是作者本机的路径，在你机器上不存在）。
 - 本套件**只依赖本项目内**的 `tools/evaluate.py` 与 `truth/`，不 import `bbh`、
   也不碰任何外部工程。
 
@@ -691,10 +693,9 @@ cp936 终端管道下不带会 UnicodeEncodeError；cmd 里先
 .venv\Scripts\python -m pytest tests/ -q        # 单测跑在 HSV 检出器上（见 tests/conftest.py）
 ```
 
-普通机器上这一条就够了。若在**沙箱/宿主代理环境**里跑（对 Python 挂了
-safe-delete 守卫的那种），直接跑会撞「会话内删除 ≥50 次 → SystemExit」的
-环境拦截，请改用打包好的分批脚本（见 `pytest.ini` 顶部注释与
-`scripts/run_tests.py`）：
+普通机器上这一条就够了。若在**受限环境**里跑（容器、宿主代理，或对 Python 挂了
+删除守卫、累计删除次数超阈值就掐断进程的那种），直接跑会报出一堆 `SystemExit`
+而非用例失败 —— 那是环境拦截，不是代码问题。改用分批脚本（顶部注释有完整说明）：
 
 ```
 .venv\Scripts\python scripts\run_tests.py        # 自动分批 + 唯一 basetemp
@@ -755,8 +756,8 @@ safe-delete 守卫的那种），直接跑会撞「会话内删除 ≥50 次 →
 
 ## 打包成 exe
 
-本仓库**暂未接打包**。原「视频剪辑」项目有一个独立的打包工程
-（`D:\claude code\视频剪辑exe`，PyInstaller 便携绿色包）；本项目若要出绿色包，
+本仓库**暂未接打包**。作者另有一个独立的打包工程（PyInstaller 便携绿色包，
+不在本仓库内）；本项目若要出绿色包，
 需要另立一个打包工程——注意 YOLO 侧要一并打进 torch / ultralytics 与
 `bbh/weights/best.pt`，体积与构建方式都和原工程不同，不能直接复用。
 
