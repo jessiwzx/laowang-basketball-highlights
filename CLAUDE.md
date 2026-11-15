@@ -33,12 +33,12 @@ powershell -ExecutionPolicy Bypass -File scripts\install.ps1   # 首次安装（
 
 - **检球器切换**：`bbh/detector_switch.py` 读环境变量 `BBH_DETECTOR`（`yolo` 默认 / `hsv` 对照），`NAME` 并入检出流指纹 `DETECT_VERSION` —— 两种检出流缓存互不串用。
 - **主管线只检筐口 ROI**（约占画面 3.6%~6.4%）：`positions.json` 里的球点 `[t,x,y,area,fi]` 是标定参考帧坐标（加回 `shift` 才是画面像素），**不含三分线出手段**——那段是 `shooter.py` 的全帧 HSV 回扫域（独立于主管线）。
-- **进球判定**：`goal_decider.py`（篮网运动证据）+ `net_motion.py` / `net_clusters.py`（网簇兜底）；评测口径钉 **LOGIC_VERSION v19**（2026-10-18 上线：`HIGH_CONF` 0.60 + 网分 −0.30/−0.26），历史 ≤v18 数字不可混用。
+- **进球判定**：`goal_decider.py`（篮网运动证据）+ `net_motion.py` / `net_clusters.py`（网簇兜底）；评测口径钉 **LOGIC_VERSION v24**（2026-11-14：面积门 `AREA_KILL_REL=0.50`；v19 起 `HIGH_CONF` 0.60 + 网分 −0.30/−0.26；v23 起 `SIDE_SHORT` 0.17），历史 ≤v23 数字不可混用。
 - **Web 层**：`bbh/web/`（app + api_* 路由 + media.py ffmpeg 现切预览 + jobs + single_instance）。入口 `python -m bbh.web` 必须 chdir 到仓库根（工作区 `work/` 按"相对仓库根"落盘）；打包冻结版改用 exe 同级 `data/`。
 
 ## 关键事实（踩过坑的）
 
-- **判定层 v19 已上线（2026-10-18）**：`HIGH_CONF=0.60`、网分 −0.30/−0.26（`goal_decider.py` / `net_motion.py`，R-020）；进度与数字唯一台账 = `docs/需求池.md` R-020，KPI 详报在 YOLO 训练仓 `yolo/reports/`（不在本仓）。
+- **判定层当前 v24 已上线（2026-11-14）**：面积门 `AREA_KILL_REL=0.50`（`goal_decider.py`）；沿革 v19（2026-10-18）定标 `HIGH_CONF=0.60`、网分 −0.30/−0.26；v20 冷却身份判据、v21/v22 筐锚点（逐帧搬点默认关）、v23 `SIDE_SHORT` 0.17。**v25 候选（A 规则 `prev_gap<3s`）实测为交换（误判 −32 / 命中 −12，查准 +2.92pct、覆盖 −1.52pct），待签字、未上线**。进度与数字唯一台账 = `docs/需求池.md`，KPI 详报在 YOLO 训练仓 `yolo/reports/`（不在本仓）。
 - **真实运行数据不在本仓**：在上游仓 `D:\claude code\视频剪辑\work\*`（10 场 shooters.json/events/标定）；源视频在 `D:\claude code\1视频获取\归档\`。本仓 `work/` 仅个别样例。
 - **受限环境跑 pytest 可能被删除守卫掐断**（SystemExit:1，删除计数超阈值）——不是用例挂了，改用 `scripts/run_tests.py`（详见该脚本顶部注释）。
 - `requirements.txt` 全部钉 `==`，且有测试守着（`tests/test_requirements.py`）：不许有 gradio、`bbh/` import 的第三方包漏登记就红；torch 是 cu121 轮子，安装要带 `--extra-index-url`。
