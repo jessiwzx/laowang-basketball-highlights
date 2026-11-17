@@ -25,7 +25,8 @@ def test_完整跑通并产出events(sample_video, sample_calibration, tmp_path)
 
 def test_progress_cb转发给检测器(sample_calibration, tmp_path):
     """run_detection 的 progress_cb 要贯穿到 detect_positions 的进度回调。
-    合成 400 帧视频（conftest 样例仅 180 帧，够不到检测器 fi%300==0 的回调节拍）。"""
+    合成 400 帧视频（用 400 帧是为了跨多个上报节拍：2026-11-17 起节拍是
+    「≥30 帧 或 ≥2 秒」，且进循环前先报一次 (0, total)）。"""
     w, h = sample_calibration.frame_size
     path = str(tmp_path / "long.mp4")
     vw = cv2.VideoWriter(path, cv2.VideoWriter_fourcc(*"mp4v"), 30, (w, h))
@@ -36,8 +37,12 @@ def test_progress_cb转发给检测器(sample_calibration, tmp_path):
     events_path, warning = run_detection(path, sample_calibration,
                                          work_dir=str(tmp_path / "work"),
                                          progress_cb=lambda fi, tot: seen.append((fi, tot)))
-    assert seen and seen[0][0] > 0        # 检测期间确实收到进度
-    assert seen[0][1] == 400              # total 为视频总帧数
+    assert seen, "未收到任何进度回调"
+    # 进循环前先报一次：界面 1 秒内就有总帧数（旧实现要等第 300 帧，
+    # 慢机器上表现为「0/0 帧 (0%)」干等十几分钟，2026-11-17 实测）
+    assert seen[0][0] == 0 and seen[0][1] == 400
+    assert seen[-1][0] > 0               # 之后按节拍持续上报
+    assert all(tot == 400 for _fi, tot in seen)     # total 恒为视频总帧数
 
 
 def test_无检出时返回警告(sample_video, tmp_path):

@@ -31,12 +31,13 @@ BBH_YOLO_DEVICE / BBH_YOLO_CROP`。也可直接 `configure(**kw)`。
 """
 import math
 import os
+import time
 
 import cv2
 
 from . import hoop_track
-from .detector import (BAND_RATIO, RIM_Y_RATIO, STEP, VideoOpenError,
-                       _scaled_rect, roi_rect, safe_fps)
+from .detector import (BAND_RATIO, REPORT_FRAMES, REPORT_SEC, RIM_Y_RATIO,
+                       STEP, VideoOpenError, _scaled_rect, roi_rect, safe_fps)
 from .models import BallPos
 from .motion import SAMPLE_EVERY
 
@@ -149,6 +150,9 @@ def detect_positions(video_path: str, calib, step: int | None = None,
     try:
         if resume_frame > 0:
             cap.set(cv2.CAP_PROP_POS_FRAMES, resume_frame)
+        if progress_cb:                  # 进循环前先报一次：界面立刻拿到总帧数
+            progress_cb(fi, total)       # （否则慢机器上前 300 帧什么都看不到）
+        last_rep_fi, last_rep_t = fi, time.monotonic()
         while True:
             if end_frame is not None and fi >= end_frame:
                 break
@@ -215,8 +219,12 @@ def detect_positions(video_path: str, calib, step: int | None = None,
                             if on_detect:
                                 on_detect(bp)
             fi += 1
-            if progress_cb and fi % 300 == 0:
-                progress_cb(fi, total)
+            if progress_cb:
+                now = time.monotonic()
+                if (fi - last_rep_fi >= REPORT_FRAMES
+                        or now - last_rep_t >= REPORT_SEC):
+                    progress_cb(fi, total)
+                    last_rep_fi, last_rep_t = fi, now
     finally:
         cap.release()
 

@@ -770,9 +770,10 @@ def run_detection(video_path: str, calib, work_dir: str,
     落盘并存；复用路径（①②）直接返回，不会触发 progress_cb。
     stage_cb(msg|None)：阶段性步骤提示（转码/测网），期间无帧进度可报，
     靠它告知界面在干什么而不是卡死。
-    cancel_cb()→bool：每个进度节拍（300 帧）查询，True 则取消——已检出点
-    落检查点后抛 DetectionCancelled（界面在页面刷新/关闭时用它中止孤儿
-    检测，重新点开始可从断点续跑）。转码阶段（阻塞 ffmpeg）不响应取消。
+    cancel_cb()→bool：每个进度节拍（≥30 帧或 ≥2 秒，见 detector.REPORT_*）
+    查询，True 则取消——已检出点落检查点后抛 DetectionCancelled（界面在
+    页面刷新/关闭时用它中止孤儿检测，重新点开始可从断点续跑）。转码阶段
+    （阻塞 ffmpeg）不响应取消。
     force：跳过 ①② 复用，全片重检（身份相符的检查点仍续跑）。"""
     os.makedirs(work_dir, exist_ok=True)
     events_path = os.path.join(work_dir, EVENTS_FILE)

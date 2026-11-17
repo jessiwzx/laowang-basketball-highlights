@@ -3,6 +3,7 @@
 球块判据三层：HSV 颜色 → 面积上下限 → 形状（占最小外接圆比例，篮球近圆；
 篮网/手臂/栏杆等细长或不规则色块被排除）。"""
 import math
+import time
 
 import cv2
 import numpy as np
@@ -11,6 +12,13 @@ from .models import BallPos, Calibration
 from .motion import SAMPLE_EVERY
 
 STEP = 2                # 每 2 帧处理 1 帧
+# 进度上报节拍（2026-11-17）：首次**立即上报**，之后「≥REPORT_FRAMES 帧 或
+# ≥REPORT_SEC 秒」先到先报。旧的 `fi % 300 == 0` 有两个副作用：①前 300 帧
+# 界面恒显「0/0 帧 (0%)」，用户以为卡死（远端实测干等 10 分钟）；②取消检查
+# 搭在同一节拍上（pipeline.on_progress），慢机器上点取消要等 300 帧才响应。
+# 回调只读、不参与判定——改节拍对检出结果零影响。两个检测器共用这两个值。
+REPORT_FRAMES = 30
+REPORT_SEC = 2.0
 # ROI 倍率（相对筐口宽 w/高 h）。2026-08-19 从 UP=2/DOWN=3/SIDE=1 扩大——
 # 旧值下 1080p 里 ROI 仅 174×115px（约画面 1%），标定时抽一帧球几乎总在
 # 框外（0 命中提示逼用户反复跳时间点找球贴筐的帧）。扩大后覆盖篮下禁区，
@@ -120,6 +128,9 @@ def detect_positions(video_path: str, calib: Calibration, step: int = STEP,
         kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
         fi = resume_frame
         use_pts = None    # None=未判定（PTS=0 的首帧无法区分"正常"与"后端不支持"）
+        if progress_cb:                  # 进循环前先报一次：界面立刻拿到总帧数
+            progress_cb(fi, total)
+        last_rep_fi, last_rep_t = fi, time.monotonic()
         while True:
             if end_frame is not None and fi >= end_frame:
                 break
@@ -175,8 +186,12 @@ def detect_positions(video_path: str, calib: Calibration, step: int = STEP,
                             if on_detect:
                                 on_detect(bp)
             fi += 1
-            if progress_cb and fi % 300 == 0:
-                progress_cb(fi, total)
+            if progress_cb:
+                now = time.monotonic()
+                if (fi - last_rep_fi >= REPORT_FRAMES
+                        or now - last_rep_t >= REPORT_SEC):
+                    progress_cb(fi, total)
+                    last_rep_fi, last_rep_t = fi, now
     finally:
         cap.release()
     meta = {"fps": fps, "duration": total / fps, "frame_count": total,

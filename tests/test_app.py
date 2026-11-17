@@ -7,7 +7,7 @@ import numpy as np
 import pytest
 
 import bbh.app as app_module
-from bbh.app import (_refresh_status, add_point, build_calibration,
+from bbh.app import (_fmt_eta, _refresh_status, add_point, build_calibration,
                      clean_path, extract_frame, generate_highlight,
                      load_events_table, refine_hsv, start_detection)
 from bbh.models import Calibration
@@ -251,6 +251,37 @@ def test_刷新状态转码阶段提示(app_state):
     app_module._state.update(stage=None)          # 转码完回到帧进度显示
     msg, pct = _refresh_status()
     assert "检测中" in msg
+
+
+def test_刷新状态带帧率与设备提示(app_state):
+    """慢机器上的定性依据：状态行要给出帧率、预计剩余时间与设备
+    （2026-11-17 远端朋友报「10 分钟还是 0%」，只看截图无法区分 CPU 慢
+    与真卡死）。"""
+    app_module._state.update(running=True, done_frames=100, total_frames=1000,
+                             stage=None, _fps=2.0, _last_cb=None,
+                             device_hint="CPU（CUDA 不可用） · imgsz 1024")
+    msg, pct = _refresh_status()
+    assert "100/1,000 帧 (10%)" in msg
+    assert "2.0 帧/秒" in msg and "预计还需 7 分钟" in msg   # 900 帧 / 2.0
+    assert "CPU" in msg and "imgsz 1024" in msg and pct == 10
+
+
+def test_刷新状态总帧数未知不显示0比0(app_state):
+    """total=0（部分容器读不出帧数）不能显示「0/0 帧」——那和「还没开始」
+    长得一模一样，用户会判定为卡死。"""
+    app_module._state.update(running=True, done_frames=42, total_frames=0,
+                             stage=None, _fps=None, device_hint=None)
+    msg, pct = _refresh_status()
+    assert "总帧数未知" in msg and "42" in msg and pct == 0
+    assert "0/0" not in msg
+
+
+def test_预计剩余时长文案():
+    assert _fmt_eta(30) == "不到 1 分钟"
+    assert _fmt_eta(200) == "3 分钟"
+    assert _fmt_eta(3600) == "1 小时"
+    assert _fmt_eta(4800) == "1 小时 20 分"
+    assert _fmt_eta(86400 * 2 + 3600 * 6) == "2 天 6 小时"
 
 
 def test_重入防护(sample_video, sample_calibration, tmp_path, monkeypatch,

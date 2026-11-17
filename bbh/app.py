@@ -13,6 +13,7 @@ import re
 import shutil
 import subprocess
 import threading
+import time
 import urllib.parse
 from datetime import datetime
 
@@ -354,11 +355,16 @@ def refine_hsv(frame_rgb, s_low, v_low, video_path):
 # table_locked/last_err_md：防"剪辑台闪烁"——Timer 每 2s 一 tick，属性/值更新
 # （哪怕同值）都会让组件重渲染。表格 interactive 只在解锁后的首个 tick 恢复
 # 一次；错误文案只在变化时重写，空闲 tick 全部空 update。
+# _fps：进度回调的帧率估计（指数滑动平均，ETA 用）；_last_cb：上次回调的
+# (帧号, 时刻)，算瞬时帧率用；device_hint：这轮实际拿什么在算（CPU/CUDA +
+# imgsz + 步长），2026-11-17 起写进状态行——远端排查只看截图就能判断
+# 「慢」还是「卡」。
 _state = {"thread": None, "running": False, "error": None,
           "done": False, "events_path": None, "done_msg": None,
           "done_frames": 0, "total_frames": 0, "stage": None,
           "autoloaded": False, "table_locked": False, "last_err_md": None,
-          "cancelled": False, "last_cancel_md": None}
+          "cancelled": False, "last_cancel_md": None,
+          "_fps": None, "_last_cb": None, "device_hint": None}
 
 _start_lock = threading.Lock()   # 开始按钮防重入（check+set 原子化，M2）
 _cancel_evt = threading.Event()  # 页面刷新/关闭 → 置位请求取消（worker 在
@@ -562,7 +568,22 @@ def _detect_worker(video_path: str):
             _state["error"] = "本视频的标定缺失或不可读，请到「⚙ 标定设置」重新标定"
             return
 
+        _state["device_hint"] = _detect_env_hint()
+
         def cb(frame_idx, total):
+            """进度回调：帧率取指数滑动平均（0.7·旧 + 0.3·新），单次抖动
+            （首帧预热、偶发卡顿）不至于把 ETA 拽成「还要 3 天」或「马上好」。
+            间隔 <0.2s 的样本不计——否则开头几帧会把 dt 压到毫秒级、算出
+            天文数字帧率。"""
+            now = time.monotonic()
+            prev = _state.get("_last_cb")
+            if prev is None:
+                _state["_last_cb"] = (frame_idx, now)
+            elif frame_idx > prev[0] and now - prev[1] >= 0.2:
+                inst = (frame_idx - prev[0]) / (now - prev[1])
+                old = _state.get("_fps")
+                _state["_fps"] = inst if not old else old * 0.7 + inst * 0.3
+                _state["_last_cb"] = (frame_idx, now)
             _state["done_frames"] = frame_idx
             _state["total_frames"] = total
 
@@ -603,7 +624,8 @@ def start_detection(video_path: str):
         _state.update(running=True, done=False, error=None, events_path=None,
                       done_msg=None, done_frames=0, total_frames=0, stage=None,
                       autoloaded=False, last_err_md=None,
-                      cancelled=False, last_cancel_md=None)
+                      cancelled=False, last_cancel_md=None,
+                      _fps=None, _last_cb=None, device_hint=None)
         _cancel_evt.clear()
     _state["thread"] = threading.Thread(target=_detect_worker,
                                         args=(video_path,), daemon=True)
@@ -620,17 +642,77 @@ def _on_page_unload():
         _cancel_evt.set()
 
 
+def _fmt_eta(sec: float) -> str:
+    """秒 → 人话（「3 分钟」「1 小时 20 分」「2 天 6 小时」）。"""
+    if sec < 60:
+        return "不到 1 分钟"
+    if sec < 3600:
+        return f"{int(sec // 60)} 分钟"
+    if sec < 86400:
+        h, m = int(sec // 3600), int(sec % 3600 // 60)
+        return f"{h} 小时 {m} 分" if m else f"{h} 小时"
+    d, h = int(sec // 86400), int(sec % 86400 // 3600)
+    return f"{d} 天 {h} 小时" if h else f"{d} 天"
+
+
+def _detect_env_hint() -> str:
+    """一行说明「这轮到底拿什么在算」：CPU/CUDA + imgsz + 是否隔帧取。
+
+    起因（2026-11-17）：远端朋友报「10 分钟进度还是 0%」，只看界面截图无法
+    区分「纯 CPU 慢」与「真卡住」——两者都表现为数字不动。把设备与分辨率
+    写进状态行后，一张截图就能定性。探测失败一律按 CPU 文案降级，绝不影响
+    检测本身。"""
+    try:
+        from . import detector_yolo as DY
+        cfg = DY.CFG
+        dev = int(cfg.get("device", 0))
+        imgsz = (cfg.get("crop_imgsz") if cfg.get("crop") == "roi"
+                 else cfg.get("imgsz"))
+        if dev < 0:
+            dev_s = "CPU（手动指定）"
+        else:
+            try:
+                import torch
+                ok = bool(torch.cuda.is_available())
+                name = (torch.cuda.get_device_name(dev)
+                        if ok and dev < torch.cuda.device_count() else "")
+            except Exception:            # noqa: BLE001 —— 探测失败当 CPU
+                ok, name = False, ""
+            dev_s = f"CUDA:{dev} {name}".strip() if ok else "CPU（CUDA 不可用）"
+        out = f"{dev_s} · imgsz {imgsz}"
+        step = int(cfg.get("step") or 1)
+        if step > 1:
+            out += f" · 每 {step} 帧取 1"
+        return out
+    except Exception:                    # noqa: BLE001
+        return ""
+
+
 def _refresh_status():
     if _state["error"]:
         return f"❌ 出错：{_state['error']}", 0
     if _state["running"]:
-        pct = int(_state["done_frames"] * 100 / _state["total_frames"]) \
-            if _state["total_frames"] else 0
+        done = int(_state.get("done_frames") or 0)
+        total = int(_state.get("total_frames") or 0)
+        pct = int(done * 100 / total) if total else 0
         if _cancel_evt.is_set():           # 已请求取消，等 worker 到下一节拍
             return f"⏹ 正在取消… ({pct}%)——正在保存检查点", pct
         if _state.get("stage"):            # 转码等阶段：无帧进度，只显提示
             return f"⏳ {_state['stage']}", 0
-        return f"⏳ 检测中… {_state['done_frames']}/{_state['total_frames']} 帧 ({pct}%)", pct
+        # 总帧数读不到（部分容器 CAP_PROP_FRAME_COUNT 返回 0）时不能显 0/0：
+        # 那和「还没开始」长得一样，用户会以为卡死。改报已处理帧数。
+        head = (f"⏳ 检测中… {done:,}/{total:,} 帧 ({pct}%)" if total
+                else f"⏳ 检测中… 总帧数未知，已处理 {done:,} 帧")
+        bits = []
+        fps = _state.get("_fps")
+        if fps and fps > 0:
+            bits.append(f"{fps:.1f} 帧/秒")
+            if total > done:
+                bits.append(f"预计还需 {_fmt_eta((total - done) / fps)}")
+        hint = _state.get("device_hint")
+        if hint:
+            bits.append(hint)
+        return head + (" · " + " · ".join(bits) if bits else ""), pct
     if _state["done"]:
         return _state.get("done_msg") or "✅ 完成", 100   # 已预计算，不重读文件
     if _state.get("cancelled"):
